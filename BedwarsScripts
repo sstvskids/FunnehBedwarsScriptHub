@@ -1,0 +1,47 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bedwars Script Hub", "Midnight")
+
+-- Main - all the code
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credits for all the scripts I used")
+Section:NewLabel("Liquid Bounce (sub to the collector)")
+Section:NewLabel("Vape Script (credits to 7granddad he is the best man in the whole world)")
+local Section = Tab:NewSection("How to get the config")
+Section:NewLabel("To get the collector config, you need to be in the discord and show proof that you subbed and make sure to ping a sub giver so you can get your role faster")
+
+local Tab = Window:NewTab("Bedwars Scripts")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("Liquid Bounce", "Made by the collector, he's cool.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Robotboyingg2/Liquid-bounce-beta/main/Liquid%20bounce%20beta"))()
+end)
+Section:NewButton("V4PE V4 {Uncap FPS included}", "Made by 7GrandDad aka xylex", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/c1ca22ea6ffb23aa6346d034eadd18cfef8f7f69/NewMainScript.lua"))()
+end)
+Section:NewToggle("Vape Speed", "speed from vape", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 23
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+    else
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+Section:NewToggle("Heatseeker", "speed from vape", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 69
+        wait(0.032)
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 20
+    else
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 23
+    end
+end)
+
+Section:NewToggle("{Universal} Funny Super Human", "Be sanic at 69 speed and beat the fuck out of people", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 69
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 420
+    else
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
